@@ -25,19 +25,23 @@ body{
 }
 .document__header{
     background-color: #F2F2F2;
-    border: 1px solid #e5e3e3;
     display: flex;
     flex: 1 100%;
     flex-flow: row wrap;
+    height: 30px;
+    align-items: center;
 }
 .document__header__nav{  display:flex; }
+
+
+
 .document__header__nav--left{  }
 .document__header__nav--right{ margin-left:auto;}
-.document__header__nav__btn{}
-.document__header__nav__btn-icon{}
+.document__header__nav__btn{ background: none; border: none;  cursor: pointer;}
+.document__header__nav__separator{ padding: 0 15px;}
+.document__header__nav__btn-icon{color:#666666}
 .document__header__nav__btn-text{}
+.document__header__nav__btn-icon__angle-down:before{ font-size: 8px;}
+
 .document__body{ border: 1px solid #e5e3e3; background-color: #fff; display:flex; flex: 1 100%; overflow:hidden;  max-height: 400px }
-.document__body__content{
- padding:20px 40px;
- overflow-y: scroll;   
-}
+.document__body__content{ padding:20px 40px;  overflow-y: scroll; }
